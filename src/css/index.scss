@@ -1,0 +1,82 @@
+@import 'common';
+*{
+    margin:0; 
+    padding:0; 
+    list-style:none; 
+}
+.wrapper{
+    width:100%; 
+    height:100%; 
+    overflow:hidden; 
+    display:flex; 
+    flex-direction: column;
+    .header{
+        width:100%;
+        height:pr(40px);
+        border-top:solid pr(1px) #ccc; 
+        border-bottom:solid pr(1px) #ccc; 
+        ul{
+            width:100%; 
+            height:100%; 
+            li{
+                width:50%; 
+                text-align:center;
+                height:100%; 
+                float:left; 
+                a{
+                    display:inline-block; 
+                    padding:0 pr(5px); 
+                    line-height:pr(40px); 
+                    color:#888888; 
+                    font-size:pr(20px);
+                }
+                .active{
+                    border-bottom:solid pr(2px) black; 
+                    color:black; 
+                }
+            }
+        }
+    }
+    
+    .content{
+        width:100%; 
+        flex:1; 
+        overflow-y:scroll; 
+        ol{
+            width:100%; 
+            height:auto;
+            li{
+                float:left; 
+                width:30%; 
+                height:pr(200px);
+                //margin-right:1%; 
+                margin-left:3%; 
+                dl{
+                    width:100%; 
+                    height:100%;
+                    dt{
+                        width:100%; 
+                        height:70%;
+                        margin:pr(10px) 0; 
+                        img{
+                            width:90%; 
+                            height:100%; 
+                        }
+                    }
+                    dd{
+                        h5{
+                            font-size:pr(14px);
+                        }
+                        p{
+                            color:#aaa; 
+                            margin-top:pr(10px); 
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .conactive{
+        display:none; 
+    }
+}
